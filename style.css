@@ -1,203 +1,115 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+body{
+	background:#FFB6C1;
 }
 
-
-/* Style */
-body {
-  font: 16px/28px arial, sans-serif;
-  background-color: #eaeaea;
-  color: #333;
+.wrapper{
+	background: #fff;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
-.top-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-  background-color: lightskyblue;
-  border-bottom: 3px solid salmon;
-  z-index: 9999;
+.wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
-.container {
-  width: 960px;
-  margin: 80px auto;
-  background-color: #fff;
-  position: relative;
+.services{
+	max-height: 150px;
+	overflow: scroll;
 }
 
-.twitter {
-  width: 250px;
-  height: 250px;
-  background-image: url(twitter.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-  text-indent: -9999px;
-  position: absolute;
-  top: -23px;
-  right: -77px;
+.service h2, .service p{
+	 color: #999;
+	 margin: 10px 0;
+	 text-align: center;
 }
 
-.header {
-  padding: 20px;
-  padding-bottom: 10px;
+.service{
+	float: left;
+	background: #D3D3D3;
+	width: 29.33%;
+	margin: 1%;
+	padding: 1%;
+	height: 140px;
+	position: relative;
 }
 
-.header .judul {
-  font-size: 40px;
-  font-weight: bold;
+.service:nth-child(1){
+	top: 5px;
+}
+.service:nth-child(2){
+	top: 15px;
+}
+.service:nth-child(3){
+	top: 25px;
 }
 
-.header ul li {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 10px;
+.content{
+	padding: 10px;
+	clear: left;
+	margin: 20px 1%;
 }
 
-.header a {
-  text-decoration: none;
-  color: salmon;
-  padding: 5px;
-}
-
-.header a:hover {
-  background-color: lightskyblue;
-  color: white;
-}
-
-
-.hero {
-  height: 350px;
-  background-image: url(sampah.jpg);
-  background-size: cover;
-  background-position: 0 -350px;
-  border-bottom: 5px solid lightskyblue;
-  border-top: 5px solid salmon;
-}
-
-
-.main {
-  padding: 20px;
-  width: 600px;
-  box-sizing: border-box;
-  float: left;
-}
-
-.main h2 {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.main .penulis {
-  font-size: 11px;
-  margin-top: -5px;
-}
-
-.main a {
-  color: salmon;
-  text-decoration: none;
-}
-
-.main p {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-/* sidebar */
-.sidebar {
-  width: 300px;
-  float: right;
-  padding: 20px;
-}
-
-.sidebar h3 {
-  font-weight: bold;
-  color: #666;
-}
-
-.sidebar img {
-  width: 70px;
-  height: 70px;
-  float: left;
-  padding-right: 10px;
-}
-
-.sidebar p {
-  font: 12px/18px arial;
-}
-
-.footer {
-  background-color: #333;
-  padding: 20px;
-}
-
-.footer .copy {
-  color: #eaeaea;
-  text-align: center;
-  font-size: 12px;
+.content p{
+	-webkit-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 50px;
+	column-gap: 50px;
+	-webkit-column-rule: 1px solid #ccc;
+	column-rule: 1px solid #ccc;
+	text-align: justify;
 
 }
 
+section, aside{
+	float: left;
+	width: 46%;
+	padding: 1%;
+	margin: 1%;
+	background: #f2f2f2;
+}
+.column:after{
+	display: block;
+	content: "";
+	clear: both;
 
-/* clearfix */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
 }
 
-.cf:after {
-    clear: both;
+#banner{
+	max-height: 400px;
+	overflow: hidden;
+	margin: 1%;
+	position: relative;
 }
 
+#banner h2{
+	position: absolute;
+	top: 10%;
+	margin: 0%;
+	width: 950px;
+	text-align: center;
+	color: #ADD8E6 ;
+}
 
-.cf {
-    *zoom: 1;
+nav{
+	background: #ADD8E6;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+nav ul:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+nav li{
+	list-style-type: none;
+	margin: 0 10px;
+	color: #fff;
+	float: right;
 }
